@@ -1,0 +1,184 @@
+2<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://kit.fontawesome.com/6b48371b29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About me</a></li>
+		    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#certificates" onclick="closemenu()">Certificates</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+        </div>
+        <div class="header-text">
+            <h1>Hi,<br> I am <span>SHAIK</span> JASMINE</h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pictures/passportpicnew.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About Me</span></h1>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Shaik Jasmine, originally from Guntur. 
+                        Currently, I am pursuing a degree in Computer Science 
+                        at the esteemed Shri Vishnu Engineering College For Women in Bhimavaram.
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My unrelenting enthusiasm and 
+                        fervor drive me to explore solutions to intricate challenges. 
+                        Beyond my academic pursuits, I possess a profound passion for the culinary arts, and being co-ordinator for clubs present in our college.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span> <br> Python, Java, C, Data Structures And Algorithms</li>
+                            <li><span>Web Development</span><br>HTML, CSS</li>
+                            <li><span>Core Subjects</span><br>DBMS, OS, CN</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+			    <li><span>Oasis Web Development Intern (2023)</span> <br>Created simple projects as Landing Page,Portfolio,Temperature Converter.</li>
+                            <li><span>AWS ML Internship  (2023)</span> <br>Learned and worked about differnet models in Machine Learning.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech (2021-Present)</span> <br>Studying CSE at Shri Vishnu Engineering College For Women(A), Bhimavaram <br>CGPA: 9.4</li>
+                            <li><span>Intermediate (2019-2021)</span><br>Studied MPC at Lakshyaa Junior Kalasala,Guntur<br>Marks: 978/1000</li>
+                            <li><span>10th class (2018-2019)</span><br>Studied at Kids Patasala , Guntur <br>GPA: 10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"><span>Projects</span></h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Club Management System</h2>
+                    <p>Used HTML, CSS , JS , Servlets , JSP , JDBC and developed a full stack club management website.</p>
+                    <a href="https://github.com/jas163/ClubManagementSystem.git" target="_blank">VIEW CODE</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Book Recommendation System</h2>
+                    <p>Using Machine learning developed a Book Recommendation System, recommends books based on user preferences.</p>
+                    <a href="https://github.com/jas163/Book-Recommendation-System.git" target="_blank">VIEW CODE</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title"><span>Achievements & Certifications</span></h1>
+            <div class="certificates-list">
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Appathon Winner</h2>
+                    <p>Developed MedMinder app and stood first.</p>
+                    <a href="c1.html" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                <div>
+                    <i class="fas fa-file-alt"></i>
+                    <h2>Paper Presentation 3rd Prize</h2>
+                    <p>Secured 3rd prize in the paper presentation conducted by college</p>
+                    <a href="c2.html" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Oracle DataBase Foundation</h2>
+                    <p>A DataBase Foundations certification from Oracle</p>
+                    <a href="c3.html" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="resume">
+        <h1><span>Resume</span></h1>
+        <a href="pictures/Resume_Jasmine.pdf" target = "_blank" download class="btn btn2">Download Resume</a>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title"><span>Contact</span></h1>
+            <div class="row">
+                <div class="contact-left">
+                    
+                    <p><i class="fa-regular fa-envelope"></i>shaikjasmine277@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8328340470</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/jasmine_shaik16/?next=%2F"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/jas163"target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shaik-jasmine-504062241/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    // Add the "active-link" class to the clicked tab link
+    event.currentTarget.classList.add("active-link");
+
+    // Find the corresponding tab content and add the "active-tab" class
+    var tabContentId = tabname.toLowerCase();
+    document.getElementById(tabContentId).classList.add("active-tab");
+}
+
+    </script>
+<script>
+    var sidemen=document.getElementById("sidemenu")
+    function openmenu()
+    {
+        //console.log("Open menu clicked");
+        sidemen.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemen.style.right="-200px";
+    }
+</script>
+</body>
+</html>
